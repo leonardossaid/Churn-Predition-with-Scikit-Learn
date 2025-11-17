@@ -34,9 +34,9 @@ Technologies Used
 *   Streamlit
     
 
-Project Structuredata
+Project Structure
 
-/ : dataset (Telco Customer Churn)notebooks/ : training and evaluation notebookapp/ : Streamlit application and saved model
+data/ : dataset (Telco Customer Churn)notebooks/ : training and evaluation notebookapp/ : Streamlit application and saved model
 
 Dataset Description
 
