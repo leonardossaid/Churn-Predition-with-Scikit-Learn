@@ -1,6 +1,8 @@
 📘 **README.md — Telco Churn Prediction (Random Forest + Pipeline + Streamlit)**
 
-Project OverviewThis project builds a complete machine learning workflow for predicting customer churn using the Telco Customer Churn dataset. The solution includes data preprocessing, feature engineering, model training, evaluation, and a Streamlit application for interactive predictions. The entire ML workflow is encapsulated inside a Scikit-Learn Pipeline, making the model fully reproducible and easy to deploy.
+Project Overview
+
+This project builds a complete machine learning workflow for predicting customer churn using the Telco Customer Churn dataset. The solution includes data preprocessing, feature engineering, model training, evaluation, and a Streamlit application for interactive predictions. The entire ML workflow is encapsulated inside a Scikit-Learn Pipeline, making the model fully reproducible and easy to deploy.
 
 Goals
 
@@ -32,9 +34,23 @@ Technologies Used
 *   Streamlit
     
 
-Project Structuredata/ : dataset (Telco Customer Churn)notebooks/ : training and evaluation notebookapp/ : Streamlit application and saved modelREADME.mdrequirements.txt
+Project Structure
 
-Dataset DescriptionThe dataset includes customer demographic data, service subscription info, monthly charges, contract type, and churn status.
+```text
+├── dataset Telco-Customer-Churn.csv
+│
+├── churn analysis.ipynb # training & evaluation notebook
+│
+├── app.py # Streamlit application
+├── best_model.joblib # trained pipeline (preprocessing + model)
+│
+├── README.md
+└── requirements.txt
+```
+
+Dataset Description
+
+The dataset includes customer demographic data, service subscription info, monthly charges, contract type, and churn status.
 
 Main preprocessing steps:
 
@@ -53,9 +69,13 @@ Main preprocessing steps:
 *   Scale numeric variables using StandardScaler
     
 
-ModelingA Random Forest classifier is used as the main model due to its robustness, ability to handle non-linear relationships, and strong performance with mixed data types. The model is integrated into a Scikit-Learn Pipeline that includes all preprocessing steps.
+Modeling
 
-EvaluationThe model is evaluated using metrics suitable for churn prediction:
+A Random Forest classifier is used as the main model due to its robustness, ability to handle non-linear relationships, and strong performance with mixed data types. The model is integrated into a Scikit-Learn Pipeline that includes all preprocessing steps.
+
+Evaluation
+
+The model is evaluated using metrics suitable for churn prediction:
 
 *   ROC AUC
     
@@ -70,13 +90,19 @@ EvaluationThe model is evaluated using metrics suitable for churn prediction:
 *   Precision-Recall curveAdditionally, the decision threshold can be customized to balance between recall and precision depending on business needs.
     
 
-Hyperparameter TuningGridSearchCV is optionally used with stratified cross-validation and ROC AUC scoring to find optimized Random Forest configurations.
+Hyperparameter Tuning
 
-Model SavingThe trained pipeline (including preprocessing and the Random Forest classifier) is saved using joblib:
+GridSearchCV is optionally used with stratified cross-validation and ROC AUC scoring to find optimized Random Forest configurations.
+
+Model Saving
+
+The trained pipeline (including preprocessing and the Random Forest classifier) is saved using joblib:
 
 joblib.dump(best\_model, "best\_model.joblib")
 
-Deployment with StreamlitA Streamlit application (app.py) is included, allowing users to enter customer attributes or upload a CSV file for batch predictions.
+Deployment with Streamlit
+
+A Streamlit application (app.py) is included, allowing users to enter customer attributes or upload a CSV file for batch predictions.
 
 Features of the app:
 
@@ -91,7 +117,9 @@ Features of the app:
 *   Automatic compatibility with the full preprocessing pipeline
     
 
-Installation and UsageInstall dependencies:
+Installation and Usage
+
+Install dependencies:
 
 pip install -r requirements.txt
 
@@ -112,6 +140,6 @@ Future Improvements
 *   Deploy on Streamlit Cloud or AWS
     
 
-LicenseMIT License
+Author
 
-AuthorProject developed by Leonardo Said as part of machine learning and model deployment studies.
+Project developed by Leonardo Said as part of machine learning and model deployment studies.
