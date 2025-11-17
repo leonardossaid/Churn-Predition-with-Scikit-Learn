@@ -36,7 +36,9 @@ Technologies Used
 
 Project Structure
 
-├── dataset Telco-Customer-Churn.csv
+```text
+├── data
+│   └── Telco-Customer-Churn.csv
 │
 ├── churn analysis.ipynb # training & evaluation notebook
 │
@@ -45,6 +47,7 @@ Project Structure
 │
 ├── README.md
 └── requirements.txt
+```
 
 Dataset Description
 
