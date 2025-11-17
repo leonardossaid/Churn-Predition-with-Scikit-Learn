@@ -112,6 +112,5 @@ Future Improvements
 *   Deploy on Streamlit Cloud or AWS
     
 
-LicenseMIT License
-
-AuthorProject developed by Leonardo Said as part of machine learning and model deployment studies.
+Author
+Project developed by Leonardo Said as part of machine learning and model deployment studies.
