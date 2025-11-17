@@ -36,7 +36,15 @@ Technologies Used
 
 Project Structure
 
-data/ : dataset (Telco Customer Churn)notebooks/ : training and evaluation notebookapp/ : Streamlit application and saved model
+├── data Telco-Customer-Churn.csv
+│
+├── churn analysis.ipynb # training & evaluation notebook
+│
+├── app.py # Streamlit application
+├── best_model.joblib # trained pipeline (preprocessing + model)
+│
+├── README.md
+└── requirements.txt
 
 Dataset Description
 
