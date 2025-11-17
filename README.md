@@ -34,7 +34,9 @@ Technologies Used
 *   Streamlit
     
 
-Project Structuredata/ : dataset (Telco Customer Churn)notebooks/ : training and evaluation notebookapp/ : Streamlit application and saved modelREADME.mdrequirements.txt
+Project Structuredata
+
+/ : dataset (Telco Customer Churn)notebooks/ : training and evaluation notebookapp/ : Streamlit application and saved model
 
 Dataset Description
 
