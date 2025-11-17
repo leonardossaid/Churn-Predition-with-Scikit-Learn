@@ -182,4 +182,3 @@ if uploaded is not None:
             st.error(f"Erro durante predição em lote: {e}")
 
 st.write("---")
-st.caption("Atenção: este app assume que best_model.joblib é a pipeline completa (pré-processamento + modelo).")
